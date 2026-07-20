@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OMR WorkoutStudio | Desktop Workout Video Generator</title>
+  <meta name="description" content="OMR WorkoutStudio is a private Windows desktop app for creating branded 1080p workout videos from multi-week workout plans, clean illustrations, timers, and music." />
+  <meta property="og:title" content="OMR WorkoutStudio" />
+  <meta property="og:description" content="Create 1080p workout videos locally with clean illustrations, weekly plans, timers, YouTube-safe music mode, and branded MP4 output." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/omr-v18-clean-illustration-sample.png" />
+  <link rel="icon" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="OMR WorkoutStudio home">
+      <img src="assets/omr-workoutstudio-logo.png" alt="OMR WorkoutStudio logo" />
+      <span>OMR WorkoutStudio</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#preview">Preview</a>
+      <a href="#features">Features</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#install">Install</a>
+      <a href="#music">Music</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-button" data-download-link href="#download">Download</a>
+    </nav>
+  </header>
+
+  <section class="creator-strip" aria-label="Developer and project links">
+    <span>Built by <strong>Omarr Syed</strong></span>
+    <a data-blog-link href="#">Developer Blog</a>
+    <a data-repo-link href="#">GitHub Repo</a>
+    <a data-youtube-link href="#">YouTube</a>
+  </section>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Windows desktop app • private local rendering • 1080p by default</p>
+        <h1>Create branded workout videos from your own training plan.</h1>
+        <p class="hero-text">
+          OMR WorkoutStudio turns weeks, days, exercises, timers, clean anatomical-style illustrations, instructions, and music into downloadable MP4 workout videos from your own computer.
+        </p>
+        <div class="hero-actions" id="download">
+          <a class="button button-primary" data-download-link href="#">Download for Windows</a>
+          <a class="button button-secondary" data-release-link href="#">Latest release</a>
+          <a class="button button-secondary" data-youtube-link href="#">Watch generated videos</a>
+          <a class="button button-secondary" data-repo-link href="#">GitHub repo</a>
+        </div>
+        <p class="download-note">
+          Download the Windows ZIP, extract it, then double-click <strong>OMR WorkoutStudio.exe</strong>. The app opens as a local browser-style page.
+        </p>
+      </div>
+      <div class="hero-panel" aria-label="Application preview">
+        <img src="assets/omr-app-ui-preview-v18-6.png" alt="Preview of OMR WorkoutStudio V18.6 local app interface" />
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>Runs locally</strong><span>Your plan and videos stay on your PC</span></div>
+      <div><strong>Clean illustrations</strong><span>Default visual style replaces rough 3D</span></div>
+      <div><strong>Multi-week planner</strong><span>Weeks, days, repeats, drag/drop rows</span></div>
+      <div><strong>Music control</strong><span>YouTube-safe, personal, or beeps-only</span></div>
+    </section> 
+
+    <section class="section-shell preview-section" id="preview">
+      <div class="section-heading">
+        <p class="eyebrow">App preview</p>
+        <h2>Dark logo-matched UI with a practical step-by-step workflow.</h2>
+        <p>The app keeps the webpage interface, but runs locally like a desktop app. Build the plan, choose music, then generate one day, one week, or all weeks.</p>
+      </div>
+      <div class="preview-grid">
+        <article class="screenshot-card large-preview">
+          <img src="assets/omr-app-ui-preview-v18-6.png" alt="OMR WorkoutStudio V18.6 interface showing music and week planning" />
+          <div class="screenshot-caption">
+            <h3>Local app interface</h3>
+            <p>Dark theme aligned with the red/black/white logo style. Weeks and days can collapse so the page stays manageable.</p>
+          </div>
+        </article>
+        <article class="screenshot-card">
+          <img src="assets/omr-v18-clean-illustration-sample.png" alt="Sample clean illustration generated workout frame" />
+          <div class="screenshot-caption">
+            <h3>Clean illustration output</h3>
+            <p>Uses polished 2D anatomical-style visuals by default instead of the rough experimental Blender mannequin.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">Current features</p>
+        <h2>Everything needed to create repeatable workout videos.</h2>
+        <p>Focuses on cleaner visuals, better playlist behavior, saved custom exercises, smoother editing, and a more polished desktop experience.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="icon">🖼️</span><h3>Clean illustration mode</h3><p>Default videos use clean anatomical-style illustrations, target muscle highlights, ghost poses, and movement arrows.</p></article>
+        <article class="feature-card"><span class="icon">📅</span><h3>Multi-week planner</h3><p>Create Week 1, Week 2, and beyond. Each week can have different workout days, exercises, and music.</p></article>
+        <article class="feature-card"><span class="icon">🔁</span><h3>Exercise repeats</h3><p>Set how many times each exercise appears in the video, such as Incline Press x2 or Hammer Curl x3.</p></article>
+        <article class="feature-card"><span class="icon">↕️</span><h3>Drag-and-drop rows</h3><p>Reorder exercises with drag/drop, auto-title-case exercise names, and keep day sections easier to manage.</p></article>
+        <article class="feature-card"><span class="icon">🔍</span><h3>Library, API, and custom search</h3><p>Add built-in, API-searched, or custom exercises. New custom/API exercises are saved for future selection.</p></article>
+        <article class="feature-card"><span class="icon">🎵</span><h3>Rotating playlist audio</h3><p>YouTube-safe and personal MP3 playlists rotate through all selected tracks instead of repeating only the first clip.</p></article>
+        <article class="feature-card"><span class="icon">⏱️</span><h3>Smarter 30-second intro</h3><p>Startup stays 30 seconds: first 10 seconds summarize the workout, then 20 seconds preview the first exercise instructions.</p></article>
+        <article class="feature-card"><span class="icon">✨</span><h3>Recommended Week Builder</h3><p>Generate a new week by number of workout days, exercises per day, or daily session minutes.</p></article>
+        <article class="feature-card"><span class="icon">📦</span><h3>Program templates</h3><p>Save and load workout plans so repeat programs do not need to be rebuilt from scratch.</p></article>
+        <article class="feature-card"><span class="icon">🎬</span><h3>1080p MP4 output</h3><p>Videos include timer, progress bar, instructions, branding, beeps, music, and clean visuals.</p></article>
+        <article class="feature-card"><span class="icon">🧪</span><h3>Advanced animation library</h3><p>Optional Studio Animation Library remains available for users who want to map real clips or experiment with 3D generation.</p></article>
+      </div>
+    </section>
+
+    <section class="section-shell" id="workflow">
+      <div class="section-heading">
+        <p class="eyebrow">Workflow</p>
+        <h2>Simple enough for daily use, flexible enough for full programs.</h2>
+      </div>
+      <div class="workflow-grid">
+        <article class="workflow-card"><strong>1</strong><h3>Choose video settings</h3><p>Select visual style, timer length, rest length, resolution, and music mode.</p></article>
+        <article class="workflow-card"><strong>2</strong><h3>Add music</h3><p>Browse/copy MP3 files into YouTube-safe or personal music folders, then randomize or set week-specific music.</p></article>
+        <article class="workflow-card"><strong>3</strong><h3>Build weeks</h3><p>Create or generate weeks. Add days, exercises, repeats, and saved custom/API exercises.</p></article>
+        <article class="workflow-card"><strong>4</strong><h3>Preview instructions</h3><p>Instructions are generated automatically where possible. Custom AI instructions can be pasted and saved.</p></article>
+        <article class="workflow-card"><strong>5</strong><h3>Generate videos</h3><p>Generate all weeks, one week, or a single day. The page locks while rendering so you know it is working.</p></article>
+        <article class="workflow-card"><strong>6</strong><h3>Share or upload</h3><p>Use YouTube-safe music for YouTube uploads, or use personal/Pixabay/no-music modes for private use.</p></article>
+      </div>
+    </section>
+
+    <section class="section-shell steps-section" id="install">
+      <div class="section-heading">
+        <p class="eyebrow">How to install</p>
+        <h2>Download, extract, run.</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card"><span>1</span><h3>Download the ZIP</h3><p>Click <strong>Download for Windows</strong> and save the app ZIP to your computer.</p></div>
+        <div class="step-card"><span>2</span><h3>Extract the folder</h3><p>Right-click the ZIP and choose <strong>Extract All</strong>. Do not run it from inside the ZIP preview.</p></div>
+        <div class="step-card"><span>3</span><h3>Open the app</h3><p>Double-click <strong>OMR WorkoutStudio.exe</strong>. A local browser page opens automatically.</p></div>
+        <div class="step-card"><span>4</span><h3>Generate videos</h3><p>Your generated MP4 files are saved in the app’s local <strong>output</strong> folder.</p></div>
+      </div>
+      <div class="callout">
+        <h3>Windows security note</h3>
+        <p>Windows may show a SmartScreen warning because small independent apps may not be code-signed yet. Choose <strong>More info → Run anyway</strong> only when downloaded from your official release page.</p>
+      </div>
+    </section>
+
+    <section class="section-shell music-section" id="music">
+      <div class="section-heading">
+        <p class="eyebrow">Adding music</p>
+        <h2>Use your own MP3 files, with better playlist control.</h2>
+        <p>Rotates through all selected tracks in order. If a video is longer than the playlist, it repeats the full playlist instead of only repeating the first song.</p>
+      </div>
+      <div class="music-grid">
+        <article class="music-card"><span class="icon">🎵</span><h3>YouTube-safe music</h3><p>Use tracks you have properly licensed for YouTube. Add them through the app or copy MP3 files into the folder.</p><code>music_youtube/</code><p class="small-note">Choose <strong>YouTube-safe music</strong> in the app.</p></article>
+        <article class="music-card"><span class="icon">🎧</span><h3>Personal / Pixabay music</h3><p>Use your personal music or tracks where you understand the license terms.</p><code>music_pixabay/</code><p class="small-note">Choose <strong>Personal/Pixabay music</strong> in the app.</p></article>
+        <article class="music-card"><span class="icon">🔇</span><h3>No music</h3><p>Use only countdown and timer beeps. This is the simplest mode and needs no MP3 files.</p><code>No folder needed</code><p class="small-note">Choose <strong>No music – beeps only</strong>.</p></article>
+      </div>
+      <div class="callout info">
+        <h3>Week-specific music</h3>
+        <p>Each week can use global music settings or its own playlist. This is useful when Week 1, Week 2, or a single generated day needs a different music set.</p>
+      </div>
+    </section>
+
+    <section class="section-shell split-section">
+      <div>
+        <p class="eyebrow">Inside the video</p>
+        <h2>Startup and exercise flow</h2>
+        <ul class="check-list">
+          <li>30-second startup remains enabled.</li>
+          <li>First 10 seconds show the workout summary.</li>
+          <li>Final 20 seconds show upcoming first exercise instructions.</li>
+          <li>After each exercise, rest sections preview the next exercise instructions.</li>
+          <li>Exercise repeats appear as separate video blocks, such as 2a and 2b.</li>
+        </ul>
+      </div>
+      <div class="mini-panel">
+        <h3>Default output</h3>
+        <dl>
+          <div><dt>Resolution</dt><dd>1920 × 1080</dd></div>
+          <div><dt>Format</dt><dd>MP4</dd></div>
+          <div><dt>Startup</dt><dd>30 seconds</dd></div>
+          <div><dt>Visuals</dt><dd>Clean illustration</dd></div>
+          <div><dt>Storage</dt><dd>Local output folder</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section-shell youtube-section" id="videos">
+      <div class="youtube-copy">
+        <p class="eyebrow">Generated examples</p>
+        <h2>Watch videos created with OMR WorkoutStudio.</h2>
+        <p>See sample workout videos, timer videos, and generated fitness content on the official OMR WorkoutStudio YouTube channel.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" data-youtube-link href="#">Open YouTube channel</a>
+          <a class="button button-secondary" data-download-link href="#">Download the app</a>
+        </div>
+      </div>
+      <div class="youtube-card" aria-label="OMR WorkoutStudio YouTube channel">
+        <div class="youtube-play">▶</div>
+        <h3>@OMRWorkoutStudio</h3>
+        <p>Generated workout examples and branded fitness video output from the app.</p>
+      </div>
+    </section>
+
+    <section class="section-shell developer-section" id="developer">
+      <div class="developer-card">
+        <div class="developer-copy">
+          <p class="eyebrow">About the developer</p>
+          <h2>Built by Omarr Syed.</h2>
+          <p>OMR WorkoutStudio was created by <strong>Omarr Syed</strong>, a senior software engineer building practical tools for fitness, automation, and everyday productivity.</p>
+          <p>The public GitHub repo can showcase the product and host the download page without exposing the app source code.</p>
+        </div>
+        <div class="developer-actions">
+          <a class="button button-secondary" data-blog-link href="#">📘 Developer Blog</a>
+          <a class="button button-secondary" data-repo-link href="#">💻 GitHub Repo</a>
+          <a class="button button-primary" data-support-link href="#">☕ Support the Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell" id="faq">
+      <div class="section-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq-list">
+        <details><summary>Do users need Python?</summary><p>No. The downloadable desktop build should be packaged so users can run it like a normal Windows app.</p></details>
+        <details><summary>Do users need Blender?</summary><p>No for normal use. Defaults to clean illustration mode. Blender is only for the advanced/experimental Studio Animation Library workflow.</p></details>
+        <details><summary>Do users need FFmpeg?</summary><p>The desktop release should include FFmpeg inside the app package.</p></details>
+        <details><summary>Does the app upload my workout plan or videos?</summary><p>No. It runs locally and saves generated videos in a local output folder unless you choose to upload or share them elsewhere.</p></details>
+        <details><summary>Can I generate only one day?</summary><p>Yes. You can generate all weeks, one week, or one specific day, such as Week 2 Monday.</p></details>
+        <details><summary>Can each week have different music?</summary><p>Yes. A week can use the global playlist or its own week-specific playlist. YouTube-safe and personal playlists are kept separate.</p></details>
+        <details><summary>Can the app save custom or API-searched exercises?</summary><p>Yes. Custom and API-searched exercises added to a workout are saved into the exercise library for future selection.</p></details>
+        <details><summary>Can I upload generated videos to YouTube?</summary><p>Yes, but use music carefully. Use tracks you have properly licensed for YouTube, or use beeps-only mode. The app separates YouTube-safe and personal music folders to help avoid accidental use.</p></details>
+        <details><summary>Where do generated videos go?</summary><p>Generated MP4 files are saved inside the app folder under <strong>output</strong>.</p></details>
+        <details><summary>Where can I see example videos?</summary><p>Open the <a data-youtube-link href="#">OMR WorkoutStudio YouTube channel</a>.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>OMR WorkoutStudio</strong>
+      <p>Desktop workout video generator for Windows. Last updated <span data-updated>2026-07-18</span>.</p>
+    </div>
+    <div class="footer-links">
+      <a data-repo-link href="#">GitHub repo</a>
+      <a data-blog-link href="#">Developer Blog</a>
+      <a data-support-link href="#">Buy Me a Coffee</a>
+      <a data-youtube-link href="#">YouTube channel</a>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

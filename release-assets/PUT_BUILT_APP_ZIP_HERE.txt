@@ -1,0 +1,6 @@
+Upload your built desktop app ZIP to GitHub Releases, not directly into the Pages site.
+
+Expected release asset name:
+OMR_WorkoutStudio_Windows.zip
+
+The marketing page download URL is configured in docs/config.js.

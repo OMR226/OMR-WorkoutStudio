@@ -1,0 +1,18 @@
+OMR WorkoutStudio Public Showcase Repo
+
+This package contains the public marketing/download website for OMR WorkoutStudio.
+
+Contents:
+- README.md
+- GITHUB_SETUP.md
+- RELEASE_CHECKLIST.md
+- SHOWCASE_REPO_CONTENTS.txt
+- docs/index.html
+- docs/styles.css
+- docs/script.js
+- docs/config.js
+- docs/assets/
+- docs/.nojekyll
+- release-assets/PUT_BUILT_APP_ZIP_HERE.txt
+
+This package should not include private app source code.
