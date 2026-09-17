@@ -1,0 +1,1 @@
+Current Pro interface screenshot can be added separately if a higher-resolution marketing image is desired.
