@@ -1,6 +1,8 @@
 OMR WorkoutStudio Public Showcase Repo
 
-This package contains the public marketing/download website for OMR WorkoutStudio.
+This repository contains the public marketing/download website for two editions:
+- OMR WorkoutStudio Lite 1.0 — video-generation edition
+- OMR WorkoutStudio Pro 2.0 — complete Video + Live Workout edition
 
 Contents:
 - README.md
@@ -15,4 +17,4 @@ Contents:
 - docs/.nojekyll
 - release-assets/PUT_BUILT_APP_ZIP_HERE.txt
 
-This package should not include private app source code.
+Do not include private application source code, personal workout data, credentials, generated user recordings, API keys, or unlicensed media in this public repository.
