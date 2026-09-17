@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-  <strong>Create branded workout videos from weekly workout plans.</strong><br />
-  Multi-week planning, clean exercise illustrations, custom instructions, YouTube-safe music, and desktop video generation.
+  <strong>Two editions. One workout platform.</strong><br />
+  OMR WorkoutStudio Lite focuses on workout-video creation. OMR WorkoutStudio Pro adds Live Workout, progression tracking, mobile training, camera rep capture and workout recording.
 </p>
 
 <p align="center">
-  <a href="https://omr226.github.io/OMR-WorkoutStudio/"><strong>🌐 Live Download Page</strong></a>
+  <a href="https://omr226.github.io/OMR-WorkoutStudio/"><strong>🌐 Product & Download Page</strong></a>
   ·
-  <a href="https://github.com/OMR226/OMR-WorkoutStudio/releases/latest"><strong>⬇️ Latest Release</strong></a>
+  <a href="https://github.com/OMR226/OMR-WorkoutStudio/releases"><strong>⬇️ Releases</strong></a>
   ·
   <a href="https://www.youtube.com/@OMRWorkoutStudio"><strong>▶️ YouTube</strong></a>
   ·
@@ -21,146 +21,125 @@
 
 ---
 
-## About
+## Editions
 
-**OMR WorkoutStudio** is a Windows desktop-style workout video generator. It lets you build weekly workout plans, add exercises, generate instruction screens, add music, and export branded workout videos.
+### OMR WorkoutStudio Lite 1.0
 
-This repository is the **public showcase and download page** for the app.
+The streamlined **video-only** edition. It is based on the final pre-Live-Workout video-generation line and is intended for users who primarily want to build branded follow-along workout videos.
 
-> **Important:** The private application source code is not stored in this public repository. This repo is intentionally limited to the marketing website, screenshots, release instructions, and public-facing documentation.
+Includes:
+
+- multi-week workout planning
+- categorized exercise selection and instructions
+- 2-image / loop / instructions-only visual modes
+- per-exercise video repeats
+- timers, progress bars, music and branded workout output
+- 1080p MP4 generation and export presets
+
+Release tag: `lite-v1.0`
+
+Expected asset:
+
+```text
+OMR_WorkoutStudio_Lite_1.0_Windows.zip
+```
+
+### OMR WorkoutStudio Pro 2.0
+
+The complete edition. **Pro includes the Lite video-generation workflow** and adds the interactive workout/training system.
+
+Additional Pro capabilities include:
+
+- Live Workout with Standard Sets and Timed Circuit
+- target reps, actual reps, working weight and RIR tracking
+- exercise-specific rest/timing recommendations
+- progressive-overload history and suggestions
+- secure mobile/PWA Live Workout companion
+- camera-based rep counting with rear/selfie camera switching
+- live workout recording, playback and history
+- archive, ZIP and bulk recording management
+- unilateral Left / Right exercise support
+
+Release tag: `pro-v2.0`
+
+Expected asset:
+
+```text
+OMR_WorkoutStudio_Pro_2.0_Windows.zip
+```
 
 ---
 
 ## Screenshots
 
-### App UI
+### Pro 2.0
 
-![OMR WorkoutStudio app UI](docs/assets/omr-app-ui-preview-v18-6.png)
+See the current Pro interface on the GitHub Pages product page.
 
-### Clean illustration mode
+### Lite 1.0
 
-![Clean illustration sample](docs/assets/omr-v18-clean-illustration-sample.png)
+![OMR WorkoutStudio Lite](docs/assets/omr-app-ui-preview-v18-6.png)
 
-### Generated video layout
+### Generated video output
 
 ![Generated workout video sample](docs/assets/omr-video-sample-1080p.png)
 
 ---
 
-## Key features
-
-### Multi-week workout planner
-
-- Create Week 1, Week 2, Week 3, and beyond.
-- Each week can have its own workout days.
-- Each day can have its own exercise combination.
-- Weeks and days are collapsible so the page stays manageable.
-- Generate all weeks, one week, or one specific day.
-
-### Exercise builder
-
-- Add exercises from the built-in library.
-- Search exercises through the app/API workflow.
-- Add custom exercises with AI-assisted instruction prompts.
-- Save custom/API-added exercises for future dropdown selection.
-- Exercise dropdown is sorted by body type and exercise name.
-- Drag and drop exercise rows.
-- Set repeat counts per exercise, such as `Incline Press x2`.
-
-### Clean illustration video mode
-
-The default visual style uses clean anatomical-style illustrations instead of rough 3D mannequin output.
-
-Generated videos can show:
-
-- target-muscle highlights
-- movement arrows
-- ghost start/end poses
-- exercise instructions
-- body focus badges
-- progress/timer layout
-
-### 30-second startup intro
-
-Workout videos start with a 30-second intro:
-
-- first 10 seconds: workout summary
-- final 20 seconds: first upcoming exercise instructions
-
-This keeps the first exercise consistent with the rest of the video.
-
-### YouTube-safe music workflow
-
-- Add MP3s directly through the app.
-- Separate YouTube-safe music from Personal/Pixabay music.
-- Use global music or week-specific music.
-- Randomize/update week music.
-- Playlist rotation uses all selected tracks instead of repeating only one track.
-
-### Program templates
-
-- Save workout programs.
-- Load saved programs later.
-- Reuse multi-week routines without rebuilding them from scratch.
-
-### Optional Studio Animation Library
-
-Advanced users can attach or generate animation clips for exercises.
-
-This is optional. The app works without it because clean illustration mode is the default.
-
----
-
 ## How to download
 
-Go to the latest release:
+Use the GitHub Pages product page:
 
-[Download the latest Windows build](https://github.com/OMR226/OMR-WorkoutStudio/releases/latest)
+https://omr226.github.io/OMR-WorkoutStudio/
 
-Expected release asset name:
+Or go directly to GitHub Releases:
 
-```text
-OMR_WorkoutStudio_Windows.zip
-```
+https://github.com/OMR226/OMR-WorkoutStudio/releases
+
+The marketing page provides separate Download buttons for **Lite 1.0** and **Pro 2.0**.
 
 ---
 
-## How to run the app
+## How to run
 
-1. Download the latest ZIP from Releases.
+1. Download the ZIP for the edition you want.
 2. Extract the ZIP.
 3. Open the extracted folder.
-4. Double-click:
+4. Run:
 
 ```text
 run_app.bat
 ```
 
-The app opens in your browser as a local desktop-style app.
+The application opens in your browser as a local desktop-style application.
 
 ---
 
-## Music folders
+## Public repository purpose
 
-The app keeps music separated by intended use.
+This repository is the **public showcase, documentation and download repository** for OMR WorkoutStudio.
 
-```text
-music_youtube/
-```
+The private application source code is intentionally **not** stored here.
 
-Use this for YouTube-safe MP3 files.
+### This repository contains
 
-```text
-music_pixabay/
-```
+- GitHub Pages marketing/download website
+- public screenshots and branding assets
+- public release documentation
+- release setup/checklists
 
-Use this for Personal/Pixabay tracks.
+### This repository should not contain
 
-The app also includes a browser upload/copy workflow so you do not have to manually copy MP3 files into folders every time.
+- private Python source code
+- internal build scripts
+- personal workout data
+- generated user recordings/videos
+- unlicensed music files
+- private application secrets or API keys
 
 ---
 
-## Public repository structure
+## Repository structure
 
 ```text
 OMR-WorkoutStudio/
@@ -177,115 +156,37 @@ OMR-WorkoutStudio/
   RELEASE_CHECKLIST.md
 ```
 
----
-
-## What this repo contains
-
-This public repository contains:
-
-- marketing/download website
-- screenshots and public images
-- release setup notes
-- GitHub Pages setup notes
-- public README documentation
-
----
-
-## What this repo does not contain
-
-This public repository should **not** contain:
-
-- private Python source code
-- private desktop build scripts
-- full app source folders
-- internal app data
-- personal workout files
-- unlicensed music files
-- generated user videos
-
-The app source should stay in a private repository or local build folder.
-
----
-
-## GitHub Pages setup
-
-This repo is designed to publish from the `docs/` folder.
-
-Suggested GitHub Pages settings:
-
-```text
-Source: Deploy from branch
-Branch: main
-Folder: /docs
-```
-
-After publishing, the public website should be available at:
-
-```text
-https://omr226.github.io/OMR-WorkoutStudio/
-```
+GitHub Pages publishes from `main` → `/docs`.
 
 ---
 
 ## Release setup
 
-When publishing a new desktop version:
+Create **two separate GitHub Releases** so each edition has a permanent download URL.
 
-1. Build the private desktop app.
-2. Zip the app as:
+### Lite 1.0
 
 ```text
-OMR_WorkoutStudio_Windows.zip
+Tag: lite-v1.0
+Release name: OMR WorkoutStudio Lite 1.0
+Asset: OMR_WorkoutStudio_Lite_1.0_Windows.zip
 ```
 
-3. Create a new GitHub Release.
-4. Upload the ZIP as a release asset.
-5. Update `docs/config.js` when the version changes.
-6. Update this README with the new version notes.
+### Pro 2.0
+
+```text
+Tag: pro-v2.0
+Release name: OMR WorkoutStudio Pro 2.0
+Asset: OMR_WorkoutStudio_Pro_2.0_Windows.zip
+```
+
+The download URLs are configured in `docs/config.js`.
 
 ---
 
-## FAQ
+## Licensing / music note
 
-### Is this open source?
-
-No. This is a public showcase and download repository. The app source code is private.
-
-### Can users download the app from this repo?
-
-Yes, through the GitHub Releases download link.
-
-### Can users see the source code?
-
-Not from this repo, as long as only the marketing website and release documentation are committed here.
-
-### Does the app need to be hosted publicly?
-
-No. The app runs locally like a desktop app. The public website is only for showcasing and downloading it.
-
-### Does the app require Blender?
-
-No for normal use. Clean illustration mode is the default. Blender is only for advanced/experimental 3D animation workflows.
-
-### Does the app require external animation videos?
-
-No. The app can generate videos with clean illustration mode without external animation clips.
-
-### Can I use YouTube-safe music?
-
-Yes. Put YouTube-safe MP3 files in the YouTube-safe music workflow and choose YouTube-safe mode in the app.
-
-### Why keep YouTube-safe and Personal/Pixabay music separate?
-
-Because licensing and upload behavior can differ by platform. Keeping music separated reduces accidental misuse.
-
-### Can I generate only one day instead of the full week?
-
-Yes. The app supports rendering all weeks, one week, or one specific day.
-
-### Can I reuse custom exercises later?
-
-Yes. Custom and API-added exercises are saved for future selection.
+Users remain responsible for ensuring that music and other imported third-party content is properly licensed for the way they publish or distribute generated videos. Do not commit unlicensed audio into this public repository.
 
 ---
 
@@ -293,13 +194,7 @@ Yes. Custom and API-added exercises are saved for future selection.
 
 Built by **Omarr Syed**.
 
-- GitHub: [OMR226](https://github.com/OMR226)
-- Developer Blog: [Omarr's Backend Lab](https://omarr-backend-lab.netlify.app/)
-- YouTube: [OMR WorkoutStudio](https://www.youtube.com/@OMRWorkoutStudio)
-- Support: [Buy Me a Coffee](https://www.buymeacoffee.com/omr226)
-
----
-
-## License / usage note
-
-This repository is provided as a public showcase and download page for OMR WorkoutStudio. The application itself is distributed through release builds. Do not copy private source code, private assets, personal media, or unlicensed third-party content into this public repository.
+- GitHub: https://github.com/OMR226
+- Developer Blog: https://omarr-backend-lab.netlify.app/
+- YouTube: https://www.youtube.com/@OMRWorkoutStudio
+- Support: https://www.buymeacoffee.com/oms210
