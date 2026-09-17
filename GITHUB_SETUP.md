@@ -1,18 +1,47 @@
-# GitHub Pages Setup
+# OMR WorkoutStudio GitHub Pages + Releases Setup
 
-## 1. Create the public showcase repo
+This public repository hosts the OMR WorkoutStudio marketing/download website and public release documentation. Keep the private application source in a separate private repository or local build workspace.
 
-Recommended repo name:
+## Editions
+
+### OMR WorkoutStudio Lite 1.0
+
+Focused video-generation edition.
+
+- Tag: `lite-v1.0`
+- Release name: `OMR WorkoutStudio Lite 1.0`
+- Asset: `OMR_WorkoutStudio_Lite_1.0_Windows.zip`
+
+### OMR WorkoutStudio Pro 2.0
+
+Complete Video + Live Workout edition.
+
+- Tag: `pro-v2.0`
+- Release name: `OMR WorkoutStudio Pro 2.0`
+- Asset: `OMR_WorkoutStudio_Pro_2.0_Windows.zip`
+
+## GitHub Pages
+
+Publish from:
 
 ```text
-OMR-WorkoutStudio
+Branch: main
+Folder: /docs
 ```
 
-Use this repo for the product README and download page only.
+Public URL:
 
-## 2. Upload this package
+```text
+https://omr226.github.io/OMR-WorkoutStudio/
+```
 
-Commit these files to the repo:
+## Publishing Windows builds
+
+Do **not** commit the Windows ZIP files directly to this repository. Publish them as GitHub Release assets using the tags and exact asset names above. `docs/config.js` uses permanent release-asset URLs for the two download buttons.
+
+## Repository contents
+
+Commit only public website/documentation files such as:
 
 ```text
 README.md
@@ -23,34 +52,4 @@ SHOWCASE_REPO_CONTENTS.txt
 release-assets/
 ```
 
-## 3. Enable GitHub Pages
-
-In GitHub:
-
-1. Open the repo.
-2. Go to **Settings**.
-3. Go to **Pages**.
-4. Set source to **Deploy from a branch**.
-5. Choose branch **main**.
-6. Choose folder **/docs**.
-7. Save.
-
-Your page should become available at:
-
-```text
-https://omr226.github.io/OMR-WorkoutStudio/
-```
-
-## 4. Upload the downloadable app
-
-Build your desktop app separately. Then create a GitHub Release and upload the built ZIP as:
-
-```text
-OMR_WorkoutStudio_Windows.zip
-```
-
-The public website already points to the latest-release asset URL.
-
-## 5. Keep source private
-
-Do not place the raw app source in this public showcase repo. Use a private repo or local build folder for source code.
+Do not commit private Python source, build secrets, personal workout data, user recordings, API keys, or unlicensed media.
